@@ -10,9 +10,17 @@ it('assert sayHelloInEnglish',function () {
 });
 
 it('assert sayHelloInSpanish',function () {
-	assert.equal(app.sayHelloInSpanish(),'Holaa');
+	assert.equal(app.sayHelloInSpanish(),'Hola');
 });
 
+
+it('should equal bar',function () {
+	assert.equal(app._test.foo(),'bar');
+});
+ 
+ it('should equal infinity',function () {
+	assert.equal(app._test.INFINITY,'infinity');
+});
 // it('expect sayHelloInEnglish', function() {
 //     expect(app.sayHelloInSpanish()).to.equal('Hola');
 // });
@@ -33,12 +41,7 @@ it('assert sayHelloInSpanish',function () {
 //     expect(app.INFINITY).to.equal('infinity');
 // });
 /* ... */
-// it('should equal bar', function() {
-//     expect(app._test.foo()).to.equal('bar');
-// });
-// it('should equal infinity', function() {
-//     expect(app._test.INFINITY).to.equal('infinity');
-// });
+ 
 
 
 // require('../app.js');
@@ -76,7 +79,7 @@ describe('Temperature Conversion', function() {
   describe('cToF', function() {
     // tests here
 	it('should convert -40 celsius to -40 fahrenheit', function() {
-	   assert.equal(-410, app.cToF(-40));
+	   assert.equal(-40, app.cToF(-40));
 	  // assert.equal(undefined, cToF(''));
 
 	});
