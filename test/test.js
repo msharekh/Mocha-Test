@@ -2,7 +2,7 @@
 var assert = require('assert')
 // var expect = require('expect')
 
-var app = require('../app.js')
+var app = require('../custom.js')
 
 
 it('assert sayHelloInEnglish',function () {
@@ -21,33 +21,7 @@ it('should equal bar',function () {
  it('should equal infinity',function () {
 	assert.equal(app._test.INFINITY,'infinity');
 });
-// it('expect sayHelloInEnglish', function() {
-//     expect(app.sayHelloInSpanish()).to.equal('Hola');
-// });
 
-// it('expect sayHelloInSpanish', function() {
-//     expect(app.sayHelloInSpanish()).to.equal('Hola');
-// });
-// function foo() {
-//     return 'bar';
-// }
-// it('should equal bar', function() {
-//     expect(foo()).to.equal('bar');
-// });
-// it('should equal bar', function() {
-//     expect(app.foo()).to.equal('bar');
-// });
-// it('should equal infinity', function() {
-//     expect(app.INFINITY).to.equal('infinity');
-// });
-/* ... */
- 
-
-
-// require('../app.js');
-// var app = require('./app.js');
-
-// Array
 
 it('should return -1 when the value is not present',function () {
 	assert.equal([1,2,3].indexOf(4),-1);
@@ -60,19 +34,7 @@ describe('Array',function() {
 	});
 });
 
-// console.log('start');
-//     	console.log(INFINITY);
-//     	console.log('end');
-// describe('INFINITY', function()
-//     {
-
-//         it('INFINITY === "INFINITY"',
-//             function()
-//             {
-//                 expect(INFINITY)
-//                     .to.equal('INFINITY');
-//             });
-//     });
+ 
 // Temperature
 describe('Temperature Conversion', function() {
   
@@ -96,15 +58,4 @@ describe('Temperature Conversion', function() {
 });
 
 
-// Math
-// describe('Math',function () {
-// 	// test 1
-// 	it('should test if 3*3=9',function () {
-// 		assert.equal(9,3*3);
-// 	});
-
-// 	// test 2
-// 	it('should test if (3-4)*8 = -8 ',function () {
-// 		assert.equal(-8,(3-4)*8);
-// 	});
-// });
+ 
